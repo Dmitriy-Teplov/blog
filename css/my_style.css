@@ -1,0 +1,1023 @@
+/*Roboto Slab шрифт*/
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+/*Permanent Marker шрифт*/
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+
+.cbalink {
+    display: none;
+}
+
+html, body {
+    font-family: Roboto Slab;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+wrapper {
+    background: url('../images/wood.jpg');
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.hide {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #08090b;
+    z-index: 3;
+    transition: all 1s ease-in-out;
+}
+
+.loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: lawngreen;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+.loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #418202;
+    -webkit-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+}
+
+.loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #214300;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+}
+
+.preloader h2 {
+    position: absolute;
+    bottom: 28%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #a2a2a2;
+    font-weight: 100;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    background: white;
+    border-radius: 35px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 35px;
+}
+
+body::-webkit-scrollbar-track {
+    margin: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 35px;
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+wrapper {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+content {
+    display: block;
+    margin-top: 90px;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+header{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    height: 100px;
+    width: 100%;
+    background: url('../images/test_images/horizontal/2h.jpg');
+    color: white;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-bottom: 3px solid #a2a2a2;
+    box-shadow: 0px 0px 70px black;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: #141414;
+    border-top: 2px solid #292929;
+    align-self: flex-end;
+    margin-top: auto;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+}
+
+.note_in_footer {
+    font-family: Roboto Slab;
+    font-size: 17px;
+    color: #909090;
+    margin-left: 73%;
+}
+
+.logo-div {
+    width: 90px;
+    overflow: hidden;
+    margin-left: 10px;
+    flex-grow: 1;
+}
+
+a.header_button{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+.logo {
+    width: 100%;
+}
+
+.logo-div img {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #525252;
+    border-radius: 50%;
+}
+
+a.header_button > div.logo_text {
+    font-family: Permanent Marker;
+    font-size: 24px;
+    color: #a3a3a3;
+    line-height: 20px;
+}
+
+a.header_button {
+    text-decoration: none; 
+}
+
+nav {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav > ul {
+    list-style: none;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    padding: 5px 10px;
+    -ms-align-items: center;
+    align-items: center;
+    align-content: center;
+    box-sizing: border-box;
+}
+
+nav ul li {
+    list-style-position: inside;
+}
+
+nav > ul li {
+    position: relative;
+    display: block;
+    margin: 0px  10px;
+}
+
+nav ul.menu li a{
+    display: block;
+    padding: 5px 7px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+nav > ul li a {
+    display: inline-block;
+    color:#d4d4d4;
+    line-height: 1;
+    text-decoration:none;
+    cursor: pointer;
+    position:relative;
+}
+nav ul.menu li a:after {
+    background-color: lawngreen;
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    left:50%;
+    position:absolute;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+    -webkit-transform:translateX(-50%);
+    -moz-transform:translateX(-50%);
+    transform:translateX(-50%);
+}
+
+ul.menu a:hover:after,
+ul.menu a:focus:after {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+nav > ul li a.search, nav > ul li a.settings {
+    font-size: 34px;
+}
+
+nav > ul li a.search section.search {
+    display: none;
+}
+
+/*Оформление заголовка страницы*/
+.h1 {
+    color: #d4d4d4;
+    font-family: Roboto Slab;
+    text-indent: 25px;
+    font-size: 34px;
+    margin: 0px;
+    margin-bottom: -10px;
+}
+
+nav>ul.menu>li>ul.submenu>li>a.active {
+    color: lawngreen;
+}
+
+nav>ul>li>ul.submenu>li>a {
+    text-decoration: none;
+    transition: all 0.01s ease-in-out;
+}
+
+nav > ul li a:hover {
+    color: lawngreen;
+    text-decoration-color: lawngreen;
+}
+
+nav > ul li a.search {
+    position: relative;
+}
+
+nav > ul li a.search, nav > ul li a.settings {
+    transition: none;
+    position: relative;
+}
+
+nav > ul li a.search section.search {
+    position: absolute;
+    top: 0;
+    right: 100%;
+    box-sizing: border-box;
+    margin: 1%;
+    width: 30vw;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: flex-start;
+    align-items: flex-start;
+}
+
+nav > ul li a.search section.search input {
+    border-radius: 4px;
+    border: 2px solid #569e10;
+    outline: 0;
+    padding: 5px 15px;
+    font-size: 20px;
+    color: #569e10;
+    margin-right: 2%;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+nav > ul li a.search span {
+    display: block;
+    transition: all 0.2s ease-in-out;
+}
+
+nav > ul li a.question {
+    transition: none;
+}
+
+.help_sect {
+    background-image: url(../images/wood_motivators.jpg);
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    padding: 0.5vw;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 3px solid white;
+    overflow: auto;
+    background-attachment: local;
+}
+
+.help_sect > p {
+    font-size: 15px;
+    margin: 0;
+    padding: 0.5vw;
+    box-sizing: border-box;
+}
+
+.help_sect b {
+    display: block;
+}
+
+.help_sect .help {
+    font-size: 23px;
+    color: #0b1403;
+    text-align: center;
+}
+
+.help_sect b.help_punkt {
+    font-size: 17px;
+    color: #264d04;
+}
+
+nav > ul li a.question span {
+    display: block;
+    transition: all 0.5s ease-in-out;
+    font-size: 30px;
+}
+
+nav > ul li a.question span:hover {
+    transform: rotate(360deg);
+    
+}
+
+nav > ul li a.settings span {
+    display: block;
+    transition: all 1s ease-in-out;
+}
+
+nav > ul li a.settings:hover span{
+    transform: rotate(-360deg);
+}
+
+nav > ul li a.search:hover > span {
+    transform: rotate(-20deg);
+}
+
+ul.menu {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul.menu:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+ul.menu > li {
+    float: left;
+    position: relative;
+}
+
+ul.menu > li > a {
+    display: block;
+    padding: 5px 10px;
+    color: white;
+}
+
+/*Оформление выпадающего меню*/
+ul.submenu {
+    display: none;
+    position: absolute;
+    width: 110%;
+    top: 100%;
+    left: 0;
+    border: 3px solid #a2a2a2;
+    
+    
+/* Тень от выпадающего меню   */
+    box-shadow: 0px 0px 100px #070000;
+    
+}
+    
+}
+ul.submenu > li {
+    left: 3px;
+    right: 3px;
+}
+
+ul.submenu > li a{
+    font-size: 18px;
+}
+
+ul.menu > li:hover > ul.submenu {
+   display: block;
+   background: url('../images/wood_header.jpg');
+}
+
+/* Оформление моих статей-мотиваторов */
+.all_motivators {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.all_motivators div {
+    flex-grow: 1;
+    max-width: 30%;
+}
+
+.all_motivators div img {
+    border: 2px solid #eaeaea;
+    width: 100%;
+}
+
+.motivators {
+    border: 3px solid #a2a2a2;
+    border-radius: 7px;
+    padding: 8px;
+    padding-right: 11px;
+    margin-top: 2%;
+    transition: all 0.3s ease-in-out;
+    background-image: url(../images/wood_motivators.jpg);
+    background-attachment: local;
+}
+
+.motivators img {
+    width: 100%;
+}
+
+/*
+
+.motivators>img{
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.motivators>img:hover{
+    border: 2px solid white;
+    box-shadow: 0px 0px 7px #161c15;
+}
+*/
+
+.motivators{
+    border:3px solid #a2a2a2;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.motivators:hover{
+    border:3px solid white;
+    box-shadow: 0px 0px 40px #070000;
+}
+
+.text-motivator {
+    font-size: 16px;
+    font-family: Roboto Slab;
+    color: #1a0b29;
+
+    padding-left: 10px;
+    text-indent: 5px;
+}
+
+.text-motivator>b.istochnik {
+    color: red;
+    font-size: 16px;
+}
+
+.text-motivator b {
+    color: #000000;
+    font-size: 17px;
+}
+
+.text-motivator.full-text {
+    display: none;
+}
+
+/* Кнопка для чтения статьи (её полного открытия)*/
+.readmore {
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    padding: 7px;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+    background-color: #485546;
+    font-family: Roboto Slab;
+    font-size: 16px;
+    max-height: 50px;
+    margin-top: auto;
+    margin-bottom: 3px;
+    transition: all 0.3s ease-in-out;
+    border-bottom: 2px solid #2c342a;
+    border-left: 2px solid #2c342a; 
+    border-right: 2px solid #596856;
+    border-top: 2px solid #98b595; 
+}
+
+.readmore:hover {
+    color: white;
+    background-color: #4f9809;
+    border-bottom: 2px solid #335215;
+    border-right: 2px solid #69d007; 
+    border-left: 2px solid #3f7c05;
+    border-top: 2px solid lawngreen; 
+    box-shadow: 0px 0px 11px #070000;
+}
+
+
+
+/* Кнопки для перехода в вк и фб*/
+
+
+.button_finder>a.vk {
+    font-size: 60px;
+    margin-top: 5px;
+    margin-left: 3%;
+    color: #4da4ff;
+    transition all 0.3s ease-in-out;
+    
+}
+
+.button_finder>a.fb {
+    font-size: 60px;
+    margin-top: 5px;
+    margin-left: 3%;
+    color: #5442fb;
+    transition all 0.3s ease-in-out;
+    
+}
+
+.button_finder>a.ins {
+    font-size: 60px;
+    margin-top: 5px;
+    margin-left: 3%;
+    color: #ffe03e;
+    transition all 0.3s ease-in-out;
+    
+}
+
+
+.button_finder>a.vk:hover {
+    color: #69befd; 
+}
+
+.button_finder>a.fb:hover {
+    color: #5a50ff;
+}
+
+.button_finder>a.ins:hover {
+    color: #ffe200; 
+}
+
+
+/*данные кнопки на футере*/
+.button_finder_footer>a.vk_footer {
+    font-size: 30px;
+    margin-top: 5px;
+    margin-left: 10px;
+    color: #047474;
+}
+
+.button_finder_footer>a.fb_footer {
+    font-size: 30px;
+    margin-top: 5px;
+    margin-left: 10px;
+    color: #1d1d55;
+}
+
+.button_finder_footer>a.ins_footer {
+    font-size: 30px;
+    margin-top: 5px;
+    margin-left: 10px;
+    color: #d3c02d;
+}
+
+.button_finder_footer>a.vk_footer:hover {
+    color: #69befd; 
+}
+
+.button_finder_footer>a.fb_footer:hover {
+    color: #5a50ff;
+}
+
+.button_finder_footer>a.ins_footer:hover {
+    color: #ffe200; 
+}
+
+
+
+/*Наполнение страницы обо мне (кто я) */
+.my_photo {
+    margin-top: 2%;
+    padding: 15px;
+}
+
+.my_photo img {
+    width: 370px;
+    height: auto;
+    border: 2px solid #acff5a;
+    cursor:pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.my_photo img:hover {
+    box-shadow: 0px 0px 70px #000000;
+    border: 2px solid lawngreen;
+}
+
+content.about-me {
+    display: flex;
+    margin-top: -5vh;
+}
+
+.my_story{
+    color: #d4d4d4;
+    font-family: Roboto Slab;
+    text-indent: 25px;
+    font-size: 20px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    margin-top: 1%;
+}
+
+.my_story div:last-child {
+    flex-grow: 1;
+}
+
+.my_story div:first-child {
+    overflow: hidden;
+    flex-grow: 1;
+    margin-right: 15px;
+}
+
+.my_story div:first-child img {
+    width: 100%;
+}
+
+.name {
+    text-align: right;
+     color: #d4d4d4;
+    font-family: Roboto Slab;
+    text-indent: 25px;
+    font-size: 20px;
+}
+
+
+/* Для страницы про эскизы и дизайн*/
+.page_notation>h2 {
+    color: #d4d4d4;
+}
+
+.page_notation>p {
+    color: #d4d4d4;
+    margin-top: -1%;
+    text-indent: 1%;
+}
+
+/* КАРТИНЫ */
+
+section#pictures-buy {
+    box-sizing: border-box;
+    padding: 0 2vw 1vw;
+}
+
+.all_pictures {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.all_pictures > div {
+    flex-grow: 1;
+    max-width: 30%;
+}
+
+.all_pictures div img {
+    width: 100%;
+}
+
+.picture {
+    border: 3px solid #a2a2a2;
+    border-radius: 7px;
+    padding: 8px;
+    padding-right: 11px;
+    margin-top: 2%;
+    transition: all 0.3s ease-in-out;
+    background-image: url(../images/wood_motivators.jpg);
+    margin: 0;
+    margin-top: 1%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+}
+
+.picture div {
+    margin: 0;
+    width: 100%;
+}
+
+.picture:hover {
+    box-shadow: 0px 0px 50px #000000;
+    border: 3px solid white;
+}
+
+
+.buttons_on_pictures_div {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttons_on_pictures_div>a {
+    display: block;
+}
+
+.buttons_on_pictures_div>a.heart {
+    font-size: 200%;
+    color: #ff3333;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+}
+
+/*
+.buttons_on_pictures_div>a.buy_button {
+    font-size: 200%;
+    color: #556053;
+    margin-left: 20%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+.buttons_on_pictures_div>a.buy_button:hover{
+    color: lawngreen;
+    color: #202a16;
+}
+*/
+
+
+/* Страница с дизайнами*/
+
+section#my_arts {
+    box-sizing: border-box;
+    padding: 0 2vw 1vw;
+}
+
+.all_arts {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.all_arts > div {
+    flex-grow: 1;
+    max-width: 30%;
+}
+
+.all_arts div img {
+    width: 100%;
+}
+
+.art {
+    border: 3px solid #a2a2a2;
+    border-radius: 7px;
+    padding: 8px;
+    padding-right: 11px;
+    margin-top: 2%;
+    transition: all 0.3s ease-in-out;
+    background-image: url(../images/wood_motivators.jpg);
+    margin: 0;
+    margin-top: 1%;
+}
+
+
+.art > div:first-child {
+    overflow: hidden;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.art > div:first-child img {
+    height: 222px;
+}
+
+.art div {
+    width: 100%;
+    margin: 0;
+}
+
+.art:hover {
+    box-shadow: 0px 0px 50px #000000;
+    border: 3px solid white;
+}
+
+.art div img {
+    width: 100%;
+    border: 2px solid #a9a9a9;
+    border-radius: 3px;
+}
+
+.buttons_on_pictures_div {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttons_on_pictures_div>a {
+    display: block;
+}
+
+.buttons_on_pictures_div>a.heart {
+    font-size: 200%;
+    color: #ff3333;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+}
+
+/*
+.buttons_on_pictures_div>a.buy_button {
+    font-size: 200%;
+    color: #556053;
+    margin-left: 20%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+*/
+
+.buttons_on_pictures_div>a.buy_button:hover{
+    color: lawngreen;
+    color: #202a16;
+}
+
+#window-post {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+    transition: all 1s ease-in-out;
+}
+
+#window-post .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 6;
+    width: 70%;
+    height: 90vh;
+    max-width: 600px;
+}
+
+#window-post .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 4;
+}
+
+#window-post .motivators {
+    overflow-y: scroll;
+    max-height: 100%;
+}
